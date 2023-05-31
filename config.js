@@ -1,16 +1,17 @@
 import firebase from "firebase";
 require("@firebase/firestore");
 
-var firebaseConfig = {
-  apiKey: "AIzaSyCZrG0BF6LrnRpWZjsPQxNGyMCLByo8HrM",
-  authDomain: "e-ride-549e4.firebaseapp.com",
-  projectId: "e-ride-549e4",
-  storageBucket: "e-ride-549e4.appspot.com",
-  messagingSenderId: "588298110700",
-  appId: "1:588298110700:web:34e3df331c6b1fc95047c9",
-  measurementId: "G-G3K7BWL5LH"
-};
-
-firebase.initializeApp(firebaseConfig);
-
+//Paste your firebaseConfig here
+const firebaseConfig = {
+    apiKey: "AIzaSyBHw0eWVIkkrRu-7xCP-kkEMTx8aBcx4UU",
+    authDomain: "pro-71-8dd70.firebaseapp.com",
+    projectId: "pro-71-8dd70",
+    storageBucket: "pro-71-8dd70.appspot.com",
+    messagingSenderId: "410937920987",
+    appId: "1:410937920987:web:17369ec35b840281b7abfe"
+  };
+  
+//
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app)
 export default firebase.firestore();
